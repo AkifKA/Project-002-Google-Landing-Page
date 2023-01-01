@@ -7,17 +7,19 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 /** NAV */
 
 .nav {
+  padding: 1rem;
   width: 100%;
 }
 
 .nav a {
-  padding: 0.5rem;
+  margin-left: 10px;
+  padding: 0.4rem;
 }
 .nav ul,
 .nav li,
@@ -46,6 +48,7 @@ ul li a:hover {
   text-decoration: underline;
 }
 .nav__right--appicon {
+  margin-right: 10px;
   vertical-align: middle;
   opacity: 0.8;
 }
@@ -146,7 +149,6 @@ ul li a:hover {
   bottom: 0;
   background-color: #f2f2f2;
   width: 100%;
-  line-height: 40px;
 }
 .footer ul,
 .footer li,
@@ -156,43 +158,49 @@ ul li a:hover {
 }
 
 .footer__country {
-  width: 100%;
   font-size: 14px;
-  padding-left: 32px;
+  padding: 16px 32px;
   border-bottom: 1px solid #dadce0;
   opacity: 0.8;
 }
 
 .footer__bottom--left {
-  border: 1px solid red;
-  width: 40%;
+  width: 35%;
   text-align: left;
   display: inline-block;
 }
 
 .footer__bottom--center {
-  width: 35%;
+  width: 30%;
   opacity: 0.8;
   padding: 1rem;
   display: inline-block;
+  text-align: center;
 }
 
-.footer__center--karbon-btn {
+.bottom__center--karbon-btn {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.bottom__center--karbon-btn:hover {
+  text-decoration: underline;
 }
 
 .bottom__center--yaprak-img {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 .bottom__center--yaprak-img,
 .bottom__center--karbon-btn {
   vertical-align: middle;
   margin-right: 0.3rem;
-  font-size: 12px;
 }
 
 .footer__bottom--right {
-  border: 1px solid red;
+  width: calc(100% - 65% - 9px);
+  display: inline-block;
+  text-align: right;
 }
 
 .footer__bottom ul {
